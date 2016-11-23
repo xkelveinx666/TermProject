@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors CaiJinBiao
+ * @date    2016-11-22 21:45:06
+ * @version 1.0
+ */
+html, body{
+	height:100%;
+}
+#wrap{
+	overflow:auto;
+}
+#header{
+	display:none;
+}
+.header-title{
+	height:2em;
+}
+.title-span{
+	display:none;
+	font-size:3em;
+	color:#929292;
+}
+/*导航栏开始*/
+#nav{
+	float:left;
+	background-color:#3E3E40;
+}
+.nav-logo{
+	margin-top:2.2em;
+	margin-bottom:3em;
+	width:70px;
+	height:60px;
+	font-size:1.3em;
+	text-indent:-9999px;
+	background:url(../image/weixin.png) no-repeat 4.5px 0px;
+	background-size:60px 60px;
+}
+figure{
+	height:3.3em;
+	font-size:2.3em;
+	text-align:center;
+}
+.nav-figure{
+	height:8em;
+}
+.nav-pic{
+	padding:1em 0px;
+	width:40px;
+	font-size:1em;
+}
+figcaption{
+	color:#FFFFFF;
+	cursor:default;
+}
+/*导航栏结束*/
+/*左侧两栏信息开始*/
+#content{
+	overflow:auto;
+	background-color:blue;
+}
+#content-concat{
+	float:left;
+	width:310px;
+	background-color:#ECECEC;
+}
+#content-show{
+	overflow:hidden;
+	background-color:#4e7e9e;
+}
+/*左侧两栏信息结束*/
+.concat-message{
+	height:99%;
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors CaiJinBiao
+ * @date    2016-11-23 16:55:35
+ * @version 1.0
+ */
+/*聊天记录信息*/
+.Message{
+	padding:15px 0;
+	overflow:hidden;
+	cursor:pointer;
+}
+.Message:hover{
+	background-color:#D2D2D2;
+}
+.Message-icon{
+	float:left;
+	margin:0 2%;
+	width:40px;
+	height:40px;
+}
+.Message-record{
+	height:40px;
+	cursor:default;
+	cursor:pointer;
+}
+.record-name{
+	height:25px;
+	line-height:25px;
+	font-size:4.5em;
+}
+.record-detail{
+	height:1.1em;
+	line-height:1.1em;
+	font-size:3em;
+}
+.time{
+	float:right;
+	text-align:right;
+	font-size:0.7em;
+}
