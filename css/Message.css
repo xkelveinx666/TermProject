@@ -7,12 +7,16 @@
  */
 /*聊天记录信息*/
 .Message{
-	padding:15px 0;
+	padding:15px 2.5%;
+	width:95%;
 	overflow:hidden;
 	cursor:pointer;
 }
 .Message:hover{
 	background-color:#D2D2D2;
+}
+.Message+.Message{
+	border-top:0.3em solid #E4E4E4;
 }
 .Message-icon{
 	float:left;
@@ -26,6 +30,7 @@
 	cursor:pointer;
 }
 .record-name{
+	display:inline-block;
 	height:25px;
 	line-height:25px;
 	font-size:4.5em;
@@ -37,6 +42,9 @@
 }
 .time{
 	float:right;
+	display:inline-block;
+	height:25px;
+	line-height:25px;
 	text-align:right;
-	font-size:0.7em;
+	font-size:3em;
 }

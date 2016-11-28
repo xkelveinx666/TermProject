@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors CaiJinBiao
+ * @date    2016-11-23 21:39:37
+ * @version 1.0
+ */
+#wrap{
+	position:relative;
+	background-color:#F7F7F7;
+}
+#header, #footer{
+	position:fixed;
+	left:0;
+}
+/*头部开始*/
+#header{
+	top:0;
+	height:60px;
+	line-height:60px;
+	font-size:6em;
+	border-bottom:0.16em solid #DCDCDC;
+}
+.header-back{
+	margin:0 3px -3px 0;
+	margin-left:1.2%;
+	margin-right:-1%;
+	width:25px;
+	height:25px;
+	cursor:pointer;
+}
+#message-name{
+	margin-left:2%;
+}
+.header-group{
+	float:right;
+	margin-right:2%;
+	height:60px;
+	line-height:60px;
+}
+#group-pic{
+	margin:0 0 -11px 0;
+	height:40px;
+	width:40px;
+	cursor:pointer;
+}
+/*头部结束*/
+/*内容区开始*/
+#content{
+	position:absolute;
+	left:50%;
+	top:60px;
+	bottom:185px;
+	margin-left:-45%;
+	margin-top:0.2em;
+	font-size:6em;
+	width:90%;
+	padding-right:17px;
+	overflow:hidden;
+}
+#content:hover{
+	width:92.2%;
+	padding-right:0;
+	overflow:auto;
+}
+.content-messageLeft, .content-messageRight{
+	margin-bottom:1em;
+}
+.messageLeft-pic, .messageRight-pic{
+	width:42px;
+	height:42px;
+}
+.messageLeft-pic{
+	float:left;
+}
+.messageRight-pic{
+	float:right;
+}
+.messageLeft-text, .messageRight-text{
+	display:inline-block;
+	max-width:60%;
+	font-size:0.8em;
+	line-height:2em;
+	word-wrap:break-word;
+	border:1px solid #E7E7E7;
+}
+.messageLeft-text{
+	margin-left:1%;
+}
+.messageRight-text{
+	float:right;
+	margin-right:1%;
+	background-color:#9EEA6A;
+}
+/*内容区结束*/
+/*底部开始*/
+#footer{
+	bottom:0;
+	padding:0 2.5%;
+	height:185px;
+	width:95%;
+	font-size:5em;
+	border-top:0.2em solid #DCDCDC;
+	background-color:#F7F7F7;
+}
+#footer-face{
+	margin-top:10px;
+	height:35px;
+	width:35px;
+	cursor:pointer;
+}
+#footer-text{
+	display:block;
+	height:90px;
+	text-align:justify;
+	letter-spacing:0;
+	font-size:0.8em;
+	border:none;
+	outline:none;
+	resize:none;
+	overflow:auto;
+	background-color:#F7F7F7;
+}
+#footer-send{
+	float:right;
+	margin-right:2%;
+	width:68px;
+	height:30px;
+	color:#989898;
+	font-size:1em;
+	letter-spacing:0;
+	text-align:center;
+	border:none;
+	outline:none;
+	border:1px solid #D5D5D5;
+	background-color:#F7F7F7;
+	cursor:pointer;
+}
+#footer-send:hover{
+	color:#000000;
+	border:0;
+}
+/*底部结束*/

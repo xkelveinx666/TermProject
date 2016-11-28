@@ -3,45 +3,6 @@ window.onload = function() {
 	/*此JS文件用于生成Message*/
 	(function(){
 		var wrap = document.getElementById("wrap");
-		/*创建节点类*/
-		var Node = function(tag) {
-			if(typeof(tag) === 'string') {
-				this.node = document.createElement(tag);
-			}
-			else if(typeof(tag) === 'object'){
-				this.node = tag;
-			}
-			else {
-				alert('请用字符串或对象创建该对象');
-				return null;
-			}
-		}
-		Node.prototype = {
-			constructor:Node,
-			addAttribute:function(attrName, attrValue) {
-				var node = this.node;
-				if(attrName !== 'className') {
-					node.setAttribute(attrName, attrValue);
-				}
-				else {
-					var className = node.className;
-					node.className = className + ' ' + attrValue;
-				}
-			},
-			setText:function(text) {
-				this.node.innerHTML = text;
-			},
-			getNode:function() {
-				return this.node;
-			},
-			addChild(node) {
-				if(!node instanceof Node) {
-					alert('请传入一个Node对象');
-				}
-				this.node.appendChild(node.getNode());
-			}
-		}
-		/*节点类结束*/
 		/*讯息类开始*/
 		var Message = function(img, name, time, text) {
 			this.img = img;
@@ -56,7 +17,7 @@ window.onload = function() {
 		}
 		Message.prototype = {
 			constructor:Message,
-			createMessage:function() {
+			createMessage:function(parentNode) {
 				var messageDiv = new Node('div'),
 					messageIcon = new Node('img'),
 					messageRecord = new Node('div'),
@@ -68,14 +29,14 @@ window.onload = function() {
 				messageIcon.addAttribute(attrClass, 'Message-icon');
 				messageIcon.addAttribute('src', this.img);
 				messageRecord.addAttribute(attrClass, 'Message-record fontYaHei');
-				recordName.addAttribute(attrClass, 'record-name width100');
+				recordName.addAttribute(attrClass, 'record-name');
 				recordName.setText(this.name);
 				time.addAttribute(attrClass, 'time');
 				time.setText(this.time);
 				recordDetail.addAttribute(attrClass, 'record-detail width100');
 				recordDetail.setText(this.text);
-				recordName.addChild(time);
 				messageRecord.addChild(recordName);
+				messageRecord.addChild(time);
 				messageRecord.addChild(recordDetail);
 				messageDiv.addChild(messageIcon);
 				messageDiv.addChild(messageRecord);
@@ -84,18 +45,36 @@ window.onload = function() {
 				this.recordName = recordName;
 				this.timeSpan = time;
 				this.recordDetail = recordDetail;
+				parentNode.insertBefore(messageDiv.getNode(), parentNode.firstChild);
 			},
-			editMessage:function() {
+			editMessage:function(newImg, newName, newTime, newText) {
+				if(newImg) {
+					this.messageIcon.addAttribute('src', newImg);
+				}
+				if(newName) {
+					this.recordName.setText(newName);
+				}
+				if(newTime) {
+					this.timeSpan.setText(newTime);
+				}
+				if(newText) {
+					this.recordDetail.setText(newText);
+				}
 			},
 			showMessage:function() {
 			}
 		}
 		/*讯息类结束*/
-		var first = new Message('1','2','3','4');
-		first.createMessage();
-		wrap.appendChild(first.messageDiv.getNode());
-		var me = new Message('2','4','5','6');
-		me.createMessage();
-		wrap.appendChild(me.messageDiv.getNode());
+		var first = new Message('image/weixin.png','软工二班','20:50','Leo:收到');
+		first.createMessage(wrap);
+		var me = new Message('2','订阅号','17:13','嗯');
+		me.createMessage(wrap);
+		var second = new Message('2','订阅号','17:13','嗯');
+		second.createMessage(wrap);
+		var second1 = new Message('2','遗嘱','16:14','嗯');
+		second1.createMessage(wrap);
+		second1.editMessage('4', '测试', '18:13', '哈哈');
+		var temp = new Message('5','译注','22:18','hahahahahaha');
+		temp.createMessage(wrap);
 	}());
 }
