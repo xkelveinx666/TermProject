@@ -8,8 +8,10 @@
 <meta name="viewport" content="width=device-width, height=device-height" />
 <meta name="keywords" content="TermProject">
 <link rel="shortcut icon" href="image/favicon.ico" />
+<meta name="viewport" content="width=device-width, height=device-height" />
 <link href="css/Base.css" rel="stylesheet" type="text/css" />
 <link href="css/Main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (max-width:700px)" href="css/MainPhone.css" />
 </head>
 <body>
     <div id="wrap">
@@ -24,38 +26,35 @@
     		<h1 class="nav-logo"><span class="logo-span">微信</span><img class="logo-pic" src="image/weixin.png" /></h1>
     		<ul class="width100 fontYaHei">
     			<li>
-                    <div class="nav-figure">
+                    <div id="message" class="nav-figure">
                         <img class="nav-pic" src="image/message.png" alt="讯息"/>
                         <span class="figcaption">微信</span>
                     </div>
                 </li>
     			<li>
-                    <div class="nav-figure">
+                    <div id="concat" class="nav-figure">
                         <img class="nav-pic" src="image/contacts.png" alt="通讯录"/>
                         <span  contenteditable="true" class="figcaption">通讯录</span>
                     </div>
                 </li>
     			<li>
-                     <div class="nav-figure">
+                     <div id="moments" class="nav-figure">
                          <img class="nav-pic" src="image/find.png" alt="发现"/>
                          <span class="figcaption">发现</span>
                      </div>
                  </li>
-    			<li>
-                    <div class="nav-figure">
-                    <img class="nav-pic" src="image/center.png" alt="我"/>
-                    <span class="figcaption">我</span></div>
-                </li>
     		</ul>
     	</div>
     	<div id="content" class="height100">
     		<div id="content-concat" class="height100">
-    			<iframe class="width100 concat-message" src="Message.html"></iframe>
+    			<iframe id="iframeLeft" class="width100 height100 concat-message" src="Message.html"></iframe>
     		</div>
     		<div id="content-show" class="height100">
-    			<iframe class="width100 height100" src="Chat.html"></iframe>
+    			<iframe id="iframeRight" class="width100 height100" src="Chat.html"></iframe>
     		</div>
     	</div>
     </div>
+    <script src="js/publicValue.js"></script>
+    <script src="js/Main.js"></script>
 </body>
 </html>

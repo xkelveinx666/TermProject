@@ -1,11 +1,14 @@
 @charset "UTF-8";
 /**
- * 
+ *
  * @authors CaiJinBiao
  * @date    2016-11-23 16:55:35
  * @version 1.0
  */
 /*聊天记录信息*/
+#wrap{
+	background-color:#ECECEC;
+}
 .Message{
 	padding:15px 2.5%;
 	width:95%;

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors CaiJinBiao
+ * @date    2016-12-03 21:59:00
+ * @version 1.0
+ */
+body{
+	min-width:332px;
+	background-color:#F8F8F8;
+	overflow-y:auto;
+}
+/*头部开始*/
+#header{
+	height:40px;
+	line-height:40px;
+	min-width:270px;
+	font-size:1.3em;
+	border-bottom:0.16em solid #DCDCDC;
+}
+.header-back{
+	margin:0 9px -9px 0;
+	margin-left:1.2%;
+	width:25px;
+	height:25px;
+	cursor:pointer;
+}
+/*头部结束*/
+#container-header{
+	position:relative;
+}
+#theme{
+	position:relative;
+	max-width:100%;
+	z-index:0;
+}
+.user{
+	position:relative;
+	float:right;
+	margin-right:5%;
+	margin-top:-2.5em;
+	font-size:4em;
+	z-index:1;
+	overflow:hidden;
+}
+.user-nameAndLogo{
+	display:block;
+}
+.user-name{
+	margin-left:3em;
+	height:3.5em;
+	line-height:3.5em;
+	cursor:pointer;
+}
+.user-logo{
+	float:right;
+	width:3.5em;
+	height:3.5em;
+	border:0.15em solid #FFFFFF;
+}
+.user-saying{
+	width:100%;
+	font-size:0.8em;
+	height:1em;
+	line-height:1em;
+	text-align:right;
+	color:#D2D2D2;
+	overflow:hidden;
+}
+#container{
+	margin:0 auto;
+	margin-top:4em;
+	width:90%;
+	font-size:4em;
+	background-color:#F8F8F8;
+}
+.record{
+	background-color:#F8F8F8;
+}
+.record + .record{
+	margin-top:2em;
+}
+.record-left{
+	float:left;
+	min-width:5em;
+	font-size:1em;
+}
+.record-left h2{
+	float:left;
+	font-size:2em;
+}
+.record-left span{
+	font-size:1em;
+}
+.record-logo{
+	margin-top:4px;
+	width:30px;
+	height:30px;
+}
+.record-right{
+	overflow:hidden;
+}
+.record h4{
+	color:#556E83;
+	margin:0;
+}
+.record-context{
+	line-height:1.5em;
+	text-align:justify;
+}
+.record-timeAndAdd{
+	width:90%;
+}
+.record-time{
+	font-size:0.95em;
+	line-height:2em;
+}
+.commentButton{
+	float:right;
+	font-size:1em;
+	width:3em;
+	height:1.5em;
+	line-height:1.5em;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#8395AE;
+	cursor:pointer;
+}
+.record-username{
+	line-height:2.5em;
+}
+.record-comment{
+	width:90%;
+	background-color:#EEEEEE;
+}
+.record-comment p{
+	margin:0 auto;
+	width:97%;
+	line-height:2em;
+	font-size:1em;
+	text-align:justify;
+}
+.record-comment h4 {
+	float:left;
+}
+.inputOutSide{
+	display:none;
+	margin-top:0.5em;
+	font-size:1em;
+}
+.comment-input{
+	width:90%;
+	margin-top:1.5em;
+	height:1em;
+	font-size:1em;
+	outline:none;
+	border:none;
+	border-bottom:1px solid #D2D2D2;
+	background-color:#F8F8F8;
+}
+.comment-submit{
+	display:inline-block;
+	margin-left:-2.7em;
+	font-size:1em;
+	width:2.7em;
+	height:1.2em;
+	line-height:1.2em;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#8395AE;
+	cursor:pointer;
+}

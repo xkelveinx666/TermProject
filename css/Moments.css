@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors CaiJinBiao (you@example.org)
+ * @date    2016-11-28 20:55:16
+ * @version 1.0
+ */
+html,body{
+	background-color:#F8F8F8;
+}
+#header{
+	position:relative;
+}
+#theme{
+	position:relative;
+	max-width:100%;
+	z-index:0;
+}
+.user{
+	position:relative;
+	float:right;
+	margin-right:5%;
+	margin-top:-2.5em;
+	width:9em;
+	font-size:4em;
+	z-index:1;
+	overflow:hidden;
+}
+.user-name{
+	float:left;
+	height:3.5em;
+	line-height:3.5em;
+	cursor:pointer;
+}
+.user-logo{
+	float:right;
+	width:3.5em;
+	height:3.5em;
+	border:0.15em solid #FFFFFF;
+}
+#container{
+	margin:0 auto;
+	margin-top:2em;
+	width:90%;
+	font-size:4em;
+	background-color:#F8F8F8;
+}
+.record {
+	margin-bottom:2em;
+}
+.record-left{
+	float:left;
+}
+.record-logo{
+	margin-top:4px;
+	width:30px;
+	height:30px;
+}
+.record-right{
+	overflow:hidden;
+}
+.record h4{
+	margin:0;
+	color:#556E83;
+	cursor:pointer;
+}
+.record-context{
+	line-height:1.5em;
+	text-align:justify;
+}
+.record-timeAndAdd{
+	width:90%;
+}
+.record-time{
+	font-size:0.95em;
+	line-height:2em;
+}
+.commentButton{
+	float:right;
+	font-size:1em;
+	width:3em;
+	height:1.5em;
+	line-height:1.5em;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#8395AE;
+	cursor:pointer;
+}
+.record-username{
+	line-height:2.5em;
+}
+.record-comment{
+	width:90%;
+	background-color:#EEEEEE;
+}
+.record-comment p{
+	margin:0 auto;
+	width:97%;
+	line-height:2em;
+	font-size:1em;
+	text-align:justify;
+}
+.record-comment h4 {
+	float:left;
+}
+.record+.record{
+	border-top:0.1em solid #D2D2D2;
+}
+.inputOutSide{
+	display:none;
+	margin-top:0.5em;
+	font-size:1em;
+}
+.comment-input{
+	width:90%;
+	margin-top:1.5em;
+	height:1em;
+	line-height:1em;
+	font-size:1em;
+	outline:none;
+	border:none;
+	border-bottom:1px solid #D2D2D2;
+	background-color:#F8F8F8;
+}
+.comment-input:hover{
+	line-height:1em;
+}
+.comment-submit{
+	display:inline-block;
+	margin-left:-2.7em;
+	font-size:1em;
+	width:2.7em;
+	height:1.2em;
+	line-height:1.2em;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#8395AE;
+	cursor:pointer;
+}

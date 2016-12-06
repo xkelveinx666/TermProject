@@ -7,6 +7,7 @@
  */
 html, body{
 	height:100%;
+	overflow-y:hidden;
 }
 #header{
 	display:none;
@@ -37,13 +38,17 @@ html, body{
 .logo-pic{
 	display:block;
 	margin:0px auto;
-	width:60px;
-	height:60px;
+	width:50px;
+	height:50px;
 }
 .nav-figure{
 	height:8em;
 	font-size:2.3em;
 	text-align:center;
+	color:#FFFFFF;
+}
+li+li{
+	margin-top:2em;
 }
 .nav-pic{
 	display:block;
@@ -54,7 +59,6 @@ html, body{
 	cursor:pointer;
 }
 .figcaption{
-	color:#FFFFFF;
 	cursor:pointer;
 }
 /*导航栏结束*/
@@ -64,16 +68,13 @@ html, body{
 }
 #content-concat{
 	float:left;
-	width:310px;
+	width:360px;
 	background-color:#ECECEC;
 	overflow:hidden;
 }
 #content-show{
-	min-height:510;
+	min-height:510px;
 	overflow:hidden;
 	background-color:#4e7e9e;
 }
 /*左侧两栏信息结束*/
-.concat-message{
-	height:99%;
-}

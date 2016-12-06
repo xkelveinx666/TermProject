@@ -6,19 +6,42 @@
 <title>聊天记录</title>
 <meta name="description" content="聊天记录">
 <meta name="keywords" content="聊天记录">
+<meta name="viewport" content="width=device-width, height=device-height" />
 <link href="css/Base.css" rel="stylesheet">
 <link href="css/Chat.css" rel="stylesheet">
 </head>
 <body>
-	<div id="wrap">
+	<div id="wrap" class="height100">
 		<div id="header" class="width100">
 			<p>
-				<img class="header-back" src="image/back.png" />
+				<a href="Message.html">
+					<img class="header-back" src="image/back.png" />
+				</a>
 				<span id="message-name" class="fontYaHei">TentcooStudio</span>
-				<span class="header-group"><img id="group-pic" src="image/group.png" /></span>
+				<img id="group-pic" src="image/group.png" />
 			</p>
 		</div>
-		<div id="content">
+		<div id="nav" class="height100 fontYaHei">
+			<div class="nav-figure">
+                <img class="nav-pic" src="image/user1.jpg" />
+                <span class="figcaption">用户1</span>
+            </div>
+            <div class="nav-figure">
+                <img class="nav-pic" src="image/weixin.png" />
+                <span class="figcaption">用户2</span>
+            </div>
+            <div class="nav-group">
+            	<p>群聊名称<span class="group-name"><span id="name-span">TentcooStudio</span></span></p>
+            	<p>群二维码</p>
+            	<p>群公告</p>
+            </div>
+            <div id="nav-option">
+            	<p>消息免打扰<span class="option-button"><span class="button-background button-backgroundClick"><span class="button-circle button-circleClick"></span></span></span></p>
+            	<p>置顶聊天<span class="option-button"><span class="button-background"><span class="button-circle"></span></span></span></p>
+            	<p>保存到通讯录<span class="option-button"><span class="button-background"><span class="button-circle"></span></span></span></p>
+            </div>
+		</div>
+		<div id="content" class="fontYaHei">
 			<div class="content-messageLeft clearfix">
 				<img class="messageLeft-pic" src="image/weixin.png"/>
 				<p class="messageLeft-text">12312321321</p>
@@ -28,26 +51,19 @@
 				<p class="messageLeft-text">1231232132112433333333333222222222222222222222222222222222222222222222222222222222222</p>
 			</div>
 			<div class="content-messageRight clearfix">
-				<img class="messageRight-pic" src="image/weixin.png"/>
-				<p class="messageRight-text">1231232132112433333333333222222222222222222222222222222222222222222222222222222222222</p>
-			</div>
-						<div class="content-messageRight clearfix">
-				<img class="messageRight-pic" src="image/weixin.png"/>
-				<p class="messageRight-text">1231232132112433333333333222222222222222222222222222222222222222222222222222222222222</p>
-			</div>
-						<div class="content-messageRight clearfix">
-				<img class="messageRight-pic" src="image/weixin.png"/>
+				<img class="messageRight-pic" src="image/user1.jpg"/>
 				<p class="messageRight-text">1231232132112433333333333222222222222222222222222222222222222222222222222222222222222</p>
 			</div>
 		</div>
 		<div id="footer">
 			<p>
-				<img id="footer-face" src="image/face.png" />
+				<div id="footer-face"></div>
 				<textarea id="footer-text" class="width100 fontYaHei" type="text"></textarea>
 				<input id="footer-send" class="fontYaHei" type="submit" value="发送"/>
 			</p>
 		</div>
 	</div>
-	<script src="js/DomController.js">
+	<script src="js/DomController.js"></script>
+	<script src="js/Chat.js"></script>
 </body>
 </html>

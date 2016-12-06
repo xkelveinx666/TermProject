@@ -24,6 +24,7 @@ window.onload = function() {
 					recordName = new Node('p'),
 					time = new Node('span'),
 					recordDetail = new Node('p'),
+					hrefA = new Node('a'),
 					attrClass = 'className';
 				messageDiv.addAttribute(attrClass, 'Message width100');
 				messageIcon.addAttribute(attrClass, 'Message-icon');
@@ -40,12 +41,14 @@ window.onload = function() {
 				messageRecord.addChild(recordDetail);
 				messageDiv.addChild(messageIcon);
 				messageDiv.addChild(messageRecord);
+				hrefA.addAttribute('href','Chat.html');
+				hrefA.addChild(messageDiv);
 				this.messageDiv = messageDiv;
 				this.messageIcon = messageIcon;
 				this.recordName = recordName;
 				this.timeSpan = time;
 				this.recordDetail = recordDetail;
-				parentNode.insertBefore(messageDiv.getNode(), parentNode.firstChild);
+				parentNode.insertBefore(hrefA.getNode(), parentNode.firstChild);
 			},
 			editMessage:function(newImg, newName, newTime, newText) {
 				if(newImg) {
@@ -60,21 +63,21 @@ window.onload = function() {
 				if(newText) {
 					this.recordDetail.setText(newText);
 				}
-			},
-			showMessage:function() {
 			}
 		}
 		/*讯息类结束*/
 		var first = new Message('image/weixin.png','软工二班','20:50','Leo:收到');
 		first.createMessage(wrap);
-		var me = new Message('2','订阅号','17:13','嗯');
+		var me = new Message('image/paopao/1.png','订阅号','17:13','嗯');
 		me.createMessage(wrap);
-		var second = new Message('2','订阅号','17:13','嗯');
+		var second = new Message('image/paopao/2.png','订阅号','17:13','嗯');
 		second.createMessage(wrap);
-		var second1 = new Message('2','遗嘱','16:14','嗯');
+		var second1 = new Message('image/paopao/3.png','遗嘱','16:14','嗯');
 		second1.createMessage(wrap);
-		second1.editMessage('4', '测试', '18:13', '哈哈');
-		var temp = new Message('5','译注','22:18','hahahahahaha');
+		second1.editMessage('image/paopao/4.png', '测试', '18:13', '哈哈');
+		var temp = new Message('image/paopao/5.png','译注','22:18','hahahahahaha');
 		temp.createMessage(wrap);
+		var qige = new Message('image/paopao/6.png','戚哥','14:57','下午好');
+		qige.createMessage(wrap);
 	}());
 }

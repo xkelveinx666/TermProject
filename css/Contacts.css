@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors CaiJinBiao
+ * @date    2016-12-04 15:02:10
+ * @version 1.0
+ */
+img{
+	margin-right:0.5em;
+	height:2em;
+	width:2em;
+	vertical-align:middle;
+}
+#wrap{
+ 	font-size:3.3em;
+ 	background-color:#F8F8F8;
+}
+.group{
+	font-size:1em;
+	background-color:#FFFFFF;
+}
+.group p{
+	height:2.5em;
+	line-height:2.5em;
+	font-size:1em;
+	text-indent:0.5em;
+	cursor:default;
+}
+.group p:hover{
+	background-color:#D2D2D2;
+}
+.area{
+	height:2em;
+	line-height:2em;
+	text-indent:1em!important;
+	background-color:#F8F8F8;
+}
+.area:hover{
+	background-color:#F8F8F8!important;
+}

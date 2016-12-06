@@ -18,6 +18,7 @@
 	top:0;
 	height:60px;
 	line-height:60px;
+	min-width:270px;
 	font-size:6em;
 	border-bottom:0.16em solid #DCDCDC;
 }
@@ -32,19 +33,102 @@
 #message-name{
 	margin-left:2%;
 }
-.header-group{
-	float:right;
-	margin-right:2%;
-	height:60px;
-	line-height:60px;
-}
 #group-pic{
-	margin:0 0 -11px 0;
+	display:inline-block;
+	float:right;
+	padding-top:10px;
+	padding-right:2%;
 	height:40px;
 	width:40px;
 	cursor:pointer;
 }
 /*头部结束*/
+/*测导航栏开始*/
+#nav{
+	position:fixed;
+	right:-320px;
+	width:320px;
+	font-size:3em;
+	background-color:#EBEBEB;
+	z-index:999;
+}
+.nav-figure{
+	display:inline-block;
+	margin-left:10%;
+	font-size:1.5em;
+}
+.nav-pic{
+	display:block;
+	margin:0px auto;
+	padding:1em 0px;
+	width:40px;
+	height:40px;
+	font-size:1em;
+	cursor:pointer;
+}
+.figcaption{
+	display:block;
+	word-wrap:break-word;
+	cursor:pointer;
+}
+.nav-group, #nav-option{
+	margin-top:2em;
+	font-size:1.5em;
+	background-color:#F7F7F7;
+}
+.group-name{
+	float:right;
+	width:40%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+#name-span{
+	height:2.5em;
+	line-height:2.5em;
+	font-size:1em;
+	font-family:'宋体';
+	letter-spacing:0;
+}
+.nav-group p, #nav-option p{
+	height:2.5em;
+	line-height:2.5em;
+	font-size:1em;
+	text-indent:1em;
+	cursor:default;
+}
+.nav-group p+p, .nav-option p+p{
+	border-top:0.15em solid #EBEBEB;
+}
+.option-button{
+	float:right;
+	margin-right:5%;
+}
+.button-background{
+	display:inline-block;
+	height:1.5em;
+	width:3em;
+	background-color:#989898;
+	border-radius:2em;
+	vertical-align:middle;
+	cursor:pointer;
+}
+.button-circle{
+	float:left;
+	margin:0.15em;
+	height:1.22em;
+	line-height:1.22em;
+	width:1.25em;
+	background-color:#FFFFFF;
+	border-radius:1.25em;
+}
+.button-backgroundClick{
+	background-color:#9EEA6A;
+}
+.button-circleClick{
+	float:right;
+}
+/*测导航栏结束*/
 /*内容区开始*/
 #content{
 	position:absolute;
@@ -55,16 +139,13 @@
 	margin-top:0.2em;
 	font-size:6em;
 	width:90%;
-	padding-right:17px;
-	overflow:hidden;
-}
-#content:hover{
-	width:92.2%;
-	padding-right:0;
-	overflow:auto;
+	overflow-y:auto;
 }
 .content-messageLeft, .content-messageRight{
 	margin-bottom:1em;
+}
+.content-messageRight{
+	overflow:hidden;
 }
 .messageLeft-pic, .messageRight-pic{
 	width:42px;
@@ -79,6 +160,7 @@
 .messageLeft-text, .messageRight-text{
 	display:inline-block;
 	max-width:60%;
+	padding:0 1%;
 	font-size:0.8em;
 	line-height:2em;
 	word-wrap:break-word;
@@ -107,7 +189,6 @@
 	margin-top:10px;
 	height:35px;
 	width:35px;
-	cursor:pointer;
 }
 #footer-text{
 	display:block;
@@ -118,7 +199,7 @@
 	border:none;
 	outline:none;
 	resize:none;
-	overflow:auto;
+	overflow-y:auto;
 	background-color:#F7F7F7;
 }
 #footer-send{

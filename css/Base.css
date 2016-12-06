@@ -1,6 +1,5 @@
-html, body, div, span, iframe, h1, h2, h3, p, a,
-img, ul, li, table, tbody, tfoot, thead, tr, th,
-td, figure, figcaption{
+html, body, div, span, iframe, h1, h2, h3, h4, p, a,
+img, ul, li{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -42,4 +41,12 @@ table {
 	display:block;
 	height:0;
 	visibility:hidden;
+}
+img{
+	max-width:100%;
+}
+a{
+	color:#000000;
+	text-decoration:none;
+	outline:none;
 }
