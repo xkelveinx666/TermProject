@@ -1,80 +1,112 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 /**
  *
  * @authors CaiJinBiao
  * @date    2016-11-22 21:45:06
  * @version 1.0
  */
-html, body{
-	height:100%;
-	overflow-y:hidden;
+html,
+body
+{
+    overflow-y: hidden;
+
+    height: 100%;
 }
-#header{
-	display:none;
+#header
+{
+    display: none;
 }
-.header-title{
-	height:2em;
+.header-title
+{
+    height: 2em;
 }
-.title-span{
-	display:none;
-	font-size:3em;
-	color:#929292;
+.title-span
+{
+    font-size: 3em;
+
+    display: none;
+
+    color: #929292;
 }
 /*导航栏开始*/
-#nav{
-	float:left;
-	background-color:#3E3E40;
+#nav
+{
+    float: left;
+
+    background-color: #3e3e40;
 }
-.logo-span{
-	visibility:hidden;
+.logo-span
+{
+    visibility: hidden;
 }
-.nav-logo{
-	margin-top:2.2em;
-	margin-bottom:3em;
-	width:70px;
-	height:60px;
-	font-size:1.3em;
+.nav-logo
+{
+    font-size: 1.3em;
+
+    width: 70px;
+    height: 60px;
+    margin-top: 2.2em;
+    margin-bottom: 3em;
 }
-.logo-pic{
-	display:block;
-	margin:0px auto;
-	width:50px;
-	height:50px;
+.logo-pic
+{
+    display: block;
+
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
 }
-.nav-figure{
-	height:8em;
-	font-size:2.3em;
-	text-align:center;
-	color:#FFFFFF;
+.nav-figure
+{
+    font-size: 2.3em;
+
+    height: 8em;
+
+    text-align: center;
+
+    color: #fff;
 }
-li+li{
-	margin-top:2em;
+li + li
+{
+    margin-top: 2em;
 }
-.nav-pic{
-	display:block;
-	margin:0px auto;
-	padding:1em 0px;
-	width:40px;
-	font-size:1em;
-	cursor:pointer;
+.nav-pic
+{
+    font-size: 1em;
+
+    display: block;
+
+    width: 40px;
+    margin: 0 auto;
+    padding: 1em 0;
+
+    cursor: pointer;
 }
-.figcaption{
-	cursor:pointer;
+.figcaption
+{
+    cursor: pointer;
 }
 /*导航栏结束*/
 /*左侧两栏信息开始*/
-#content{
-	overflow:auto;
+#content
+{
+    overflow: auto;
 }
-#content-concat{
-	float:left;
-	width:360px;
-	background-color:#ECECEC;
-	overflow:hidden;
+#content-concat
+{
+    float: left;
+    overflow: hidden;
+
+    width: 360px;
+
+    background-color: #ececec;
 }
-#content-show{
-	min-height:510px;
-	overflow:hidden;
-	background-color:#4e7e9e;
+#content-show
+{
+    overflow: hidden;
+
+    min-height: 510px;
+
+    background-color: #4e7e9e;
 }
 /*左侧两栏信息结束*/

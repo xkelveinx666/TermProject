@@ -21,9 +21,9 @@ window.onload = function() {
 				if(this.text === "") {
 					retrun;
 				}
-				var side = this.side;
+				var side = this.side,
 					wrapDiv = new Node('div'),
-					logo = new Node('img');
+					logo = new Node('img'),
 					para = new Node('p');
 				wrapDiv.addAttribute('className', 'content-message' + side + '  clearfix');
 				logo.addAttribute('className', 'message' + side + '-pic');

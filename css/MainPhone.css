@@ -1,43 +1,57 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 /**
  *
  * @authors CaiJinBiao
  * @date    2016-12-05 11:21:55
  * @version 1.0
  */
-#wrap{
-	min-height:475px;
+#wrap
+{
+    min-height: 475px;
 }
-#nav{
-	position:fixed;
-	float:none;
-	font-size:1em;
-	width:100%;
-	height:80px;
-	bottom:0;
-	overflow:hidden;
+#nav
+{
+    font-size: 1em;
+
+    position: fixed;
+    bottom: 0;
+
+    float: none;
+    overflow: hidden;
+
+    width: 100%;
+    height: 80px;
 }
-#nav h1 {
-	float:left;
+#nav h1
+{
+    float: left;
 }
-#nav li {
-	float:left;
-	width:33.2%;
+#nav li
+{
+    float: left;
+
+    width: 33.2%;
 }
-.nav-logo{
-	display:none;
-	margin-top:0;
+.nav-logo
+{
+    display: none;
+
+    margin-top: 0;
 }
-li+li{
-	margin-top:0;
+li + li
+{
+    margin-top: 0;
 }
-#content-concat{
-	position:absolute;
-	top:0;
-	bottom:80px;
-	width:100%;
-	height:auto;
+#content-concat
+{
+    position: absolute;
+    top: 0;
+    bottom: 80px;
+
+    width: 100%;
+    height: auto;
 }
-#content-show{
-	display:none;
+#content-show
+{
+    display: none;
 }

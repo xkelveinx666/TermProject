@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 /**
  *
  * @authors CaiJinBiao
@@ -6,48 +6,67 @@
  * @version 1.0
  */
 /*聊天记录信息*/
-#wrap{
-	background-color:#ECECEC;
+#wrap
+{
+    background-color: #ececec;
 }
-.Message{
-	padding:15px 2.5%;
-	width:95%;
-	overflow:hidden;
-	cursor:pointer;
+.Message
+{
+    overflow: hidden;
+
+    width: 95%;
+    padding: 15px 2.5%;
+
+    cursor: pointer;
 }
-.Message:hover{
-	background-color:#D2D2D2;
+.Message:hover
+{
+    background-color: #d2d2d2;
 }
-.Message+.Message{
-	border-top:0.3em solid #E4E4E4;
+.Message + .Message
+{
+    border-top: .3em solid #e4e4e4;
 }
-.Message-icon{
-	float:left;
-	margin:0 2%;
-	width:40px;
-	height:40px;
+.Message-icon
+{
+    float: left;
+
+    width: 40px;
+    height: 40px;
+    margin: 0 2%;
 }
-.Message-record{
-	height:40px;
-	cursor:default;
-	cursor:pointer;
+.Message-record
+{
+    height: 40px;
+
+    cursor: default;
+    cursor: pointer;
 }
-.record-name{
-	display:inline-block;
-	height:25px;
-	line-height:25px;
-	font-size:4.5em;
+.record-name
+{
+    font-size: 4.5em;
+    line-height: 25px;
+
+    display: inline-block;
+
+    height: 25px;
 }
-.record-detail{
-	height:1.1em;
-	line-height:1.1em;
-	font-size:3em;
+.record-detail
+{
+    font-size: 3em;
+    line-height: 1.1em;
+
+    height: 1.1em;
 }
-.time{
-	float:right;
-	display:inline-block;
-	height:25px;
-	line-height:25px;
-	text-align:right;
-	font-size:3em;
+.time
+{
+    font-size: 3em;
+    line-height: 25px;
+
+    display: inline-block;
+    float: right;
+
+    height: 25px;
+
+    text-align: right;
 }
